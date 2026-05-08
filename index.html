@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'Algoritmo Sovrano | Sara C.</title>
+    <style>
+        /* Design Antigravity: Riduzione del rumore visivo */
+        :root {
+            --bg-color: #0a0a0a;
+            --text-color: #f4f4f4;
+            --accent-color: #00d4ff;
+            --secondary-color: #1a1a1a;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 90%;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            letter-spacing: -1px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #888;
+            margin-bottom: 30px;
+        }
+
+        /* Video Wrapper - Ottimizzato per 30 secondi */
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* Ratio 16:9 */
+            background: var(--secondary-color);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+            margin-bottom: 40px;
+        }
+
+        .video-container iframe, .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Call to Action */
+        .cta-section {
+            background: var(--secondary-color);
+            padding: 40px;
+            border-radius: 20px;
+            margin-top: 20px;
+        }
+
+        .btn-buy {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: #000;
+            padding: 18px 40px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .btn-buy:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px var(--accent-color);
+        }
+
+        .book-details {
+            margin-top: 50px;
+            text-align: left;
+            border-top: 1px solid #333;
+            padding-top: 40px;
+        }
+
+        .chapter-list {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .chapter-item {
+            background: #111;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            border-left: 3px solid var(--accent-color);
+        }
+
+        footer {
+            margin-top: 60px;
+            padding: 20px;
+            font-size: 0.8rem;
+            color: #555;
+        }
+
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.8rem; }
+            .cta-section { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- HEADER -->
+        <header>
+            <h1>L'Algoritmo Sovrano</h1>
+            <p>Un viaggio distopico tra codice e realtà di <strong>Sara C.</strong></p>
+        </header>
+
+        <!-- VIDEO SECTION (Format Light) -->
+        <section class="video-container">
+            <!-- Sostituisci l'URL con il tuo link Wistia/Vimeo/YouTube -->
+            <iframe src="https://vimeo.com/1190507388?fl=pl&fe=sh" allowfullscreen></iframe>
+        </section>
+
+        <!-- CTA SECTION -->
+        <section class="cta-section">
+            <h2>Pronto a scoprire la verità?</h2>
+            <p>Scarica subito la versione definitiva (v4) del libro digitale.</p>
+            <a href="LINK_AL_TUO_PAYMENT_GATEWAY" class="btn-buy">SCARICA IL PDF ORA</a>
+            <p style="font-size: 0.9rem; margin-top: 15px; color: #888;">Formato A5 ottimizzato per e-reader e tablet.</p>
+        </section>
+
+        <!-- BOOK DETAILS -->
+        <section class="book-details">
+            <h3>Cosa troverai all'interno:</h3>
+            <div class="chapter-list">
+                <div class="chapter-item">10 Capitoli Narrativi</div>
+                <div class="chapter-item">Prefazione dell'Autrice</div>
+                <div class="chapter-item">Appendice Tecnica AI</div>
+                <div class="chapter-item">Biografia di Sara C.</div>
+            </div>
+            <p style="margin-top: 30px;">
+                "L'Algoritmo Sovrano" esplora le implicazioni etiche e sociali della sorveglianza digitale attraverso una narrazione avvincente e analisi tecniche dettagliate.
+            </p>
+        </section>
+
+        <footer>
+            &copy; 2026 Sara C. - Tutti i diritti riservati.
+        </footer>
+    </div>
+
+</body>
+</html>
